@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .matrix{
+      height:502px;
+      width:502px;
+      position:relative;
+      background-color:#555;
+    }
+    .cell{
+      transition: background-color 0.4s, top 0.4s, left 0.4s, bottom 0.4s, right 0.4s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      border-radius: 5px;
+      border: 1px solid red;
+    }
+    .cell--selected{
+      background-color:red;
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix" id="matrix"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
